@@ -1,0 +1,21 @@
+html, body{
+  margin: 0;        
+  height: 100%;    
+}
+
+body{
+  min-height: 100vh;    
+  min-height: 100svh;    
+  min-height: 100dvh;    
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("fondo.jpg") center / cover no-repeat fixed;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #fff;
+}
+
+@supports (-webkit-touch-callout: none){
+  body{ background-attachment: scroll; }
+}
