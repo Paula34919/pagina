@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 html {
   margin: 0;
   height: 100%;
@@ -14,7 +15,21 @@ body {
   align-items: center;
   justify-content: center;
   background: url("fondo.jpg") center / cover no-repeat fixed;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #fff;
 }
+
+.wrapper{
+  width: 400px;
+  height: 440px;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+
 @supports (-webkit-touch-callout: none){
   body{ background-attachment: scroll; }
 }
