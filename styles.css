@@ -14,20 +14,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("fondo.jpg") center / cover no-repeat fixed;
+  background: url("paneles3.png") center / cover no-repeat fixed,
+  linear-gradient(135deg, #DFF2DF 0%, #DFF2F1 100%);
   font-family: "Inter", system-ui, sans-serif;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .wrapper{
-  width: 400px;
-  height: 440px;
-  background: transparent;
+  width: 600px;
+  height: 812px;
+  background: linear-gradient(135deg, #69B469 0%, #34CFC0 100%);
   backdrop-filter: blur(20px);
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
+.logo {
+  background: linear-gradient(180deg, #F8C708, #EF8D16);
+  width: 200px;
+  border-radius: 25px;
+}
+
 
 
 @supports (-webkit-touch-callout: none){
