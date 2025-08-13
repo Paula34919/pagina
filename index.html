@@ -19,41 +19,45 @@
 
 <body>
   <div class="wrapper">
+    <div class="logo">
+      <img src="calendario.png" alt="logo-calendario">
+    </div>
+    <h1 class="titulo-login">Iniciar Sesion</h1>
+    <div class="campo-registro">
+      <span>No tienes una cuenta?</span>
+      <a href="#" target="_self" rel="noopener noreferrer">Registrate aqui</a>
+    </div>
     <form class="formulario-login" action="">
-      <div class="logo">
-          <img src="abeja.png" alt="logo-abeja">
-      </div>
-      <h1 class="titulo-login">Iniciar Sesion</h1>
-      <div class="campo-registro">
-        <span>No tienes una cuenta?</span><a href="#" target="_self" rel="noopener noreferrer">Registrate aqui</a>
-      </div>
       <div class="campo-email-login">
-        <i class="fa-solid fa-envelope"></i>
-        <input
-        class="ingreso-correo"
-        type="email"
-        id="correo"
-        placeholder="@universidadean.edu.co"
-        pattern="^[a-zA-Z0-9._%+-]+@universidadean\.edu\.co$"
-        title="Debe ser un email válido de @universidadean.edu.co"
-        autocomplete="email"
-        maxlength="100"
-        required>
-        <label for="correo">Correo Estudiantil</label>
-      
+        <label for="correo">Correo Institucional</label>
+        <div class="icono-input-correo">
+          <i class="fa-solid fa-envelope"></i>
+          <input
+            class="login-correo"
+            type="email"
+            id="correo"
+            placeholder="@universidadean.edu.co"
+            pattern="^[a-zA-Z0-9._%+-]+@universidadean\.edu\.co$"
+            title="Debe ser un email válido de @universidadean.edu.co"
+            autocomplete="email"
+            maxlength="100"
+            required>
+        </div>
       </div>
       <div class="campo-contraseña-login">
-        <i class="fa-solid fa-key"></i>
-        <input
-        class="ingreso-contraseña"
-        type="password"
-        id="contraseña-form"
-        placeholder="Contraseña"
-        autocomplete="current-password"
-        minlength="8"
-        maxlength="128"
-        required>
         <label for="contraseña-form">Contraseña</label>
+        <div class="icono-input-register">
+          <i class="fa-solid fa-key"></i>
+          <input
+            class="login-contraseña"
+            type="password"
+            id="contraseña-form"
+            placeholder="Contraseña"
+            autocomplete="current-password"
+            minlength="8"
+            maxlength="128"
+            required>
+        </div>
       </div>
       <div class="campo-recordar-login">
         <input
@@ -62,10 +66,14 @@
         id="recordar"
         value="1">
         <label for="recordar">Recordar usuario</label>
-        <a class="forgot-login" href="#">¿Se marchitó tu contraseña?</a>
+        <a class="forgot-login" href="#">¿Olvidaste tu contraseña?</a>
       </div>
-      <button class="login-button" type="submit">Acceder al panal</button>
+      <div class="botones">
+        <button class="register-button" type="submit">Registrarse</button>
+        <button class="login-button" type="submit">Iniciar Sesion</button>
+      </div>
     </form>
+    <a href="" class="ayuda">¿Necesitas ayuda?</a>
   </div>
 </body>
 </html>
